@@ -1,0 +1,26 @@
+server:
+    port: 5555
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 20
+    status-page-url-path: /health
+  client:
+    registry-fetch-interval-seconds: 10 #表示eureka client间隔多久去拉取服务注册信息 在网关使用
+    service-url:
+      defaultZone: http://127.0.0.1:5100/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+spring:
+  application:
+    name: spring-cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true               # 开启注册中心路由转发
+          lower-case-service-id: true # 不区分大小写
+logging.level.org.springframework.cloud.gateway: debug

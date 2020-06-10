@@ -1,0 +1,3 @@
+org.springframework.context.ApplicationListener=com.lkx.demo.springboot.listener.applicationListener.EnvListener,com\
+  .lkx.demo.springboot.listener.applicationListener.FailedEventListener,com.lkx.demo.springboot.listener\
+  .applicationListener.PreparedEventListener,com.lkx.demo.springboot.listener.applicationListener.ReadyEventListener,com.lkx.demo.springboot.listener.applicationListener.StartListener
