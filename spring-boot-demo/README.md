@@ -9,3 +9,30 @@
 ## SpringBoot admin ...
 
 ## 属性转换
+
+
+## 端点暴露
+`com.lkx.demo.springboot.endpoint`
+
+结合配置文件
+```yaml
+management:
+  endpoint:
+    my:
+      enabled: true   # 开启指定端点
+    beans:
+      enabled: true
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"  # 代表所有
+          - shutdown
+      exclude:
+        - loggers
+      base-path: /actuator
+      path-mapping:
+        my: /myMap    # 将@Endpoint(id = "my")中的my对应的路径做映射，这个时候原本的my就不可用了
+```
