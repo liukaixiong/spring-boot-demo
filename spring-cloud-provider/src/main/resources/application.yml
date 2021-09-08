@@ -6,6 +6,10 @@ spring:
 feign:
   hystrix:
     enabled: true
+
+lkx:
+  url: http://localhost:5307
+
 #hystrix:
 #  command:
 #    default:
@@ -25,4 +29,4 @@ eureka:
       defaultZone: http://127.0.0.1:5100/eureka/
     fetch-registry: true
     register-with-eureka: true
-debug: true
+#debug: true

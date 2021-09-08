@@ -51,4 +51,8 @@ management:
         - loggers
       base-path: /actuator
       path-mapping:
-        my: /myMap    # 将@Endpoint(id = "my")中的my对应的路径做映射，这个时候原本的my就不可用了
+        myRead: /myMap    # 将@Endpoint(id = "my-read")中的my对应的路径做映射，这个时候原本的my就不可用了
+    jmx:
+      exposure:
+        include:
+          - "*"

@@ -1,4 +1,4 @@
-package com.lkx.demo.springcloud.provider.feign.rollback;
+package com.lkx.demo.springcloud.provider.feign.fallback;
 
 import com.lkx.demo.api.model.FeignResponse;
 import com.lkx.demo.springcloud.provider.feign.DemoFeign;

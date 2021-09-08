@@ -1,0 +1,23 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: alibaba-cloud-sentinel-demo
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+      block-page: /errorPage
+      http-method-specify: true
+      web-context-unify: false
+      datasource:
+        ds1:
+          redis:
+            host: 192.168.0.11
+            password: elab!264ELAB
+            database: 14
+            rule-type: DEGRADE
+            rule-key: sentinel-redis-key
+            channel: moumoumou
+            masterId: abc

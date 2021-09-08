@@ -1,7 +1,7 @@
 package com.lkx.demo.springcloud.provider.feign;
 
 import com.lkx.demo.api.model.FeignResponse;
-import com.lkx.demo.springcloud.provider.feign.rollback.BackFeignImpl;
+import com.lkx.demo.springcloud.provider.feign.fallback.BackFeignImpl;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
