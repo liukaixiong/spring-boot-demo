@@ -55,5 +55,7 @@
         <module>spring-boot-demo</module>
         <module>spring-cloud-gateway</module>
         <module>alibaba-cloud-sentinel-demo</module>
+        <module>spring-boot-plugin/spring-boot-plugin-jar</module>
+        <module>spring-boot-plugin/spring-boot-plugin-api</module>
     </modules>
 </project>
